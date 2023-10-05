@@ -1,6 +1,6 @@
+use sqlx::types::uuid::Uuid;
 use sqlx::{Connection, Executor, PgConnection, PgPool};
 use std::net::TcpListener;
-use uuid::Uuid;
 use zero2prod::configuration::{get_configuration, DatabaseSettings};
 use zero2prod::startup;
 pub struct TestApp {

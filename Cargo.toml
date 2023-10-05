@@ -32,6 +32,6 @@
   tokio = { version = "1.32", features = [
     "full",
   ] }
-  config = {version = "0.13"}
-  chrono = {default-features = false, features = ["clock"], version = "*"}
-  uuid = {features = ["v4", "fast-rng"], version = "*"}
+  config = { version = "0.13" }
+  chrono = { default-features = false, features = ["clock"], version = "*" }
+  uuid = { features = ["v4", "fast-rng"], version = "*" }

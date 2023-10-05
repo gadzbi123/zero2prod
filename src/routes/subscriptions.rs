@@ -1,10 +1,10 @@
 use std::ops::Deref;
 
 use actix_web::{web, HttpResponse, HttpResponseBuilder};
-use chrono::Utc;
 use serde::Deserialize;
+use sqlx::types::chrono::Utc;
+use sqlx::types::uuid::Uuid;
 use sqlx::PgPool;
-use uuid::Uuid;
 #[derive(Deserialize)]
 pub struct FormData {
     email: String,
